@@ -12,12 +12,12 @@ nav {
     height: 25px;
 }
 
-nav ul {
+ul {
     display: flex;
     list-style-type: none;
 }
 
-nav li {
+li {
     padding: 15px;
 }
 
@@ -41,12 +41,12 @@ nav a:hover {
     grid-template-columns: repeat(3, 1fr);
 }
 
-div>div {
+nav div>div {
     background-color: #737373;
     padding: 2px;
 }
 
-div>div:hover {
+nav div>div:hover {
     background-color: black;
 }
 
@@ -123,6 +123,36 @@ section p a {
     color: rgba(40, 7, 185, 0.945);
 }
 
-section p a:hover{
+section p a:hover {
     text-decoration: underline;
+}
+
+.footerDown {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerDown,
+.footerTop {
+    background-color: #F2F2F2;
+    border-top: solid 1px rgb(204, 204, 204, 0.5);
+    text-align: center;
+    padding-left: 20px;
+}
+
+footer a,
+footer li {
+    color: rgb(99, 99, 99);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
